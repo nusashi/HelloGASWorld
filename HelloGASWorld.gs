@@ -18,7 +18,7 @@
  *   ※.Googleのスクリプトエディタからプッシュをしてはいけない。（何故か追加されたコードを抹消し始める）
  * 
  */
-function HelloGASWorld() {
+function myFunction() {
     var selectSpreadSheet = SpreadsheetApp.getActiveSpreadsheet();
     var sheet = selectSpreadSheet.getSheetByName('シート1');
     var range = sheet.getRange(1, 1, 1);
