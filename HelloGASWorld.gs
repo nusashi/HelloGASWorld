@@ -15,6 +15,8 @@
  *    8.VSCウィンドウ下の笑顔マークの一つ左をクリック言語設定を変更
  *    9.「.gs」の関連付けにJavaScriptを設定
  * 
+ *   ※.Googleのスクリプトエディタからプッシュをしてはいけない。（何故か追加されたコードを抹消し始める）
+ * 
  */
 function HelloGASWorld() {
     var selectSpreadSheet = SpreadsheetApp.getActiveSpreadsheet();
@@ -30,10 +32,10 @@ function HelloGASWorld() {
 //    sheet.getRange("B1").setValue("Last modified: " + (new Date()));
 //}
 
-function onOpen(event) {
-    var sheet = event.source.getActiveSheet();
-    sheet.getRange("C1").setValue("OPEN：" + event.user);
-}
+// function onOpen(event) {
+//     var sheet = event.source.getActiveSheet();
+//     sheet.getRange("C1").setValue("OPEN：" + event.user);
+// }
 
 /**
 * 色を特定する
